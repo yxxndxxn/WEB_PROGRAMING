@@ -1,0 +1,64 @@
+  body{
+    margin:0;
+  }
+  a{
+
+    text-decoration:none;
+  }
+  h1{
+    font-size: 40px;
+    text-align: center;
+    border-bottom:1px solid gray;
+    margin: 0;
+    padding: 20px;
+    
+  }
+  
+  li{
+    color: gray;
+    text-decoration:none;
+    line-height: 2;
+  }
+  ol{
+    border-right: 1px solid gray;                
+    width: 100px;
+    margin:0;
+    padding: 33px;
+    
+  }
+  #grid{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+  }
+
+  #article{
+    padding: 30px;
+    border: 2px solid black;
+    margin: 20px;
+    margin-left: 40px;
+  }
+  @media(max-width: 800px){
+    #grid{
+      display: block;
+    }
+    #article{
+      margin: none;
+      margin: 30px;
+    }
+    ol{
+    border-right: none;
+    padding-left: 50px;
+                  
+    }
+    h1{
+    border-bottom:none;
+    }
+
+
+    /*웹 브라우저에 있는 모든 a태그에 대해서 바꿔랑~
+  웹 페이지에 있는 모든 a태그에 대해 모든 장식, 밑줄이 없어짐요!  
+  효과를 지정한 다음에는 끝에 세미콜론 붙이자요! 구분을 위한겅께
+
+  .을 붙이면 클래스가 saw인 태그를 가리키는 말이 되는겨
+  id선택자 > class 선택자 > 태그 선택*/
+  }
