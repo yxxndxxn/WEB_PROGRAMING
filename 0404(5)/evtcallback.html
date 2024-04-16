@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>evtcallback</title>
+</head>
+<body>
+    5초 뒤에 나왕용
+    <script>
+        /*
+        콜백 함수의 표현식
+        function order(callback){
+        callback();
+        }
+
+        - order라는 함수는 callback이라는 전달인자를 받은 후 내부에서 해당 함수를 호출
+        - 전달인자 callback은 일반 변수가 아닌 함수 이름인 함수 포인터!
+        */
+        const coffee = function(){
+            alert("주문하신 아메리카노 나왔습니당.");
+        }
+
+        setTimeout(coffee, 5000); //오 5초 뒤에 나옴!!!
+    </script>
+</body>
+</html>
+

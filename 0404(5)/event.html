@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--이벤트의 이름 앞에 on을 붙이면 이벤트 리스너 -->
+    <input type="button" value="안녕!" onclick="alert('hi')">
+    <!-- onclick의 속성은 뒤에 반드시 js가 와야함 그래서 js가 실행됨요
+        버튼 누르면 나오는 이벤트~ -->
+    <input type="text" onchange="alert('changed')">
+    <!-- onchange 속성은 내용이 바꼈을 때...? 흠 모르겠군
+        암튼 이런 속성들을 이벤트라고 해 -->
+    <input type="text" onkeydown="alert('key down!')">
+    <!-- 특정 키를 누르면 나오는 이벤트 onkeydown -->
+    <br>
+    <input type="text" value="버튼">
+    <!-- 오 이렇게 하면 text 칸 안에 버튼이라고 미리 써져 있서~! -->
+</body>
+</html>

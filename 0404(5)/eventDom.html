@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eventDom</title>
+</head>
+<body>
+    <input type='button' id = 'btnclk' value='버튼' onclick= "first()">
+    <script>
+        //DOM 요소를 얻어오기 위해 HTML의 요소에서 id 속성을 사용한 코드!
+        function first(){
+            alert('첫 번째 메시지');
+        }
+        btnclk.addEventListener('click', first);
+        btnclk.addEventListener('click', function(){
+            alert('두 번째 메시지');
+        });
+        //addEventListener는 1개의 이벤트에 여러 이벤트 핸들러를 등록하기 위해 사용!
+        btnclk.removeEventListener('click', first);
+        //오! 이건 이벤트 리스너를 삭제할 때!!
+        //원래는 first가 두 개 나와야하는데 이걸로 하나가 삭제되서 first -> second 로 넘어감!
+    </script>
+</body>
+</html>

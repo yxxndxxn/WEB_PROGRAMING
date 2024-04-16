@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>funcexpression</title>
+</head>
+<body>
+    검사 -> console 들어가면 값 나옴!
+    <script>
+        //이건 함수 표현식
+        //끝에 세미콜론 붙여야 함(그냥 함수는 세미콜론 안 붙이는디 말이지..)
+        //함수 표현식에서는 익명 함수를 변수에 대입하는 형식변수이기 때문에 변경 가능하고 유동적
+        let nickName = function()
+        {
+            console.log("다인이");
+        };
+        nickName();
+
+        nickName = function()
+        {
+            console.log("힘들다..")
+        };
+        nickName();
+    </script>
+</body>
+</html>

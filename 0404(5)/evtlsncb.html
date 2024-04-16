@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>evtlsncb</title>
+</head>
+<body>
+    
+    <button id = 'order1'>주문1</button>
+    <button id = 'order2'>주문2</button>
+    <script>
+        //이벤트 핸들러를 콜백 함수 관점으로 바라본 코드..
+        const orderHandler1 = function(){
+            alert('주문하신 아메리카노 나왔습니다.');
+        }
+        const orderHandler2 = function(){
+            alert('주문하신 카페라떼 나왔습니다.');
+        }
+
+        order1.onclick = orderHandler1;
+        order2.addEventListener('click', orderHandler2); 
+        /*
+            - 특정 이벤트가 발생 시 해당 이벤트를 처리해 주는 루틴이 바로 이벤트 핸들러이면서 콜백함수임
+
+            이벤트 리스너 = 콜백 함수
+            addEventListener(이벤트명, 콜백 함수, 옵션)
+        */  
+    </script>
+    
+</body>
+</html>

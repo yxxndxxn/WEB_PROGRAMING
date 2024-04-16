@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eventObj</title>
+</head>
+<body>
+    <input type = 'button' id='btnclk' value='버튼'>
+    <script>
+        //근데 이건 이벤트 객체!
+        function msg(event){
+            alert(event.type); //click
+            alert("x좌표: " + event.clientX);
+            alert("y좌표: " + event.clientY);            
+        }
+        btnclk.addEventListener('click', msg);
+        //이벤트의 이름 앞에 on을 붙이면 이벤트 리스너
+        //이땐 그냥 이벤트 이름만 써야하니까 click..
+    </script>
+</body>
+</html>
